@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillBridge - Empowering Futures Through Mentorship</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-blue-500">SkillBridge</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-600 hover:text-blue-500">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-500">About</a>
+                    <a href="#resources" class="text-gray-600 hover:text-blue-500">Resources</a>
+                    <a href="#find-mentor" class="text-gray-600 hover:text-blue-500">Find Mentor</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Empowering Futures Through Mentorship</h1>
+            <p class="text-xl text-white/90 mb-8">Find mentors or become one to help students achieve their dreams.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#find-mentor" class="bg-white text-blue-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Find a Mentor</a>
+                <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition">Become a Mentor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Why Mentorship Matters?</h2>
+            <div class="max-w-3xl mx-auto text-center text-gray-600">
+                <p>Mentorship bridges the gap between education and real-world success. Through personalized guidance, students can navigate their career paths with confidence, while mentors contribute to shaping the next generation of professionals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Learn Anything, For Free</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Resource Cards -->
+                <div class="resource-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">Learn Web Development</h3>
+                    <p class="text-gray-600 mb-4">Top free resources to start coding</p>
+                    <a href="#" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Visit <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <!-- Repeat for other resources -->
+                <div class="resource-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">Data Science Fundamentals</h3>
+                    <p class="text-gray-600 mb-4">Master data analysis and visualization</p>
+                    <a href="#" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Visit <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="resource-card bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">Create beautiful user experiences</p>
+                    <a href="#" target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Visit <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <!-- Add more resource cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Mentor Form -->
+    <section id="find-mentor" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto bg-white rounded-xl shadow-lg p-8">
+                <h2 class="text-3xl font-bold text-center mb-4">Find Your Perfect Mentor</h2>
+                <p class="text-center text-gray-600 mb-8">Fill the form below to connect with a mentor suited for your career journey.</p>
+                
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Full Name</label>
+                        <input type="text" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email Address</label>
+                        <input type="email" required class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2">Field of Interest</label>
+                        <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option>Web Development</option>
+                            <option>Data Science</option>
+                            <option>UI/UX Design</option>
+                            <option>Business Analytics</option>
+                            <option>Mobile Development</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2">Preferred Mode</label>
+                        <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option>Online</option>
+                            <option>In-person</option>
+                            <option>Hybrid</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2">Tell us about your goals</label>
+                        <textarea rows="4" class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
+                        Request Mentor
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 SkillBridge. All rights reserved.</p>
+        </div>
+    </footer>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
